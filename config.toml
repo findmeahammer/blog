@@ -1,4 +1,4 @@
-baseURL = "https://www.mattcresswell.dev"
+#baseURL = "https://example.com"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "find me a hammer"
@@ -47,21 +47,26 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   # Add custom css
   # customCSS = ["css/foo.css", "css/bar.css"]
 
+
   # Social Icons
   # Check https://github.com/Track3/hermit#social-icons for more info.
   [[params.social]]
     name = "linkedin"
-    url = "https://linkedin.com/"
+    url = "www.linkedin.com/in/Matt-Cresswell"
+
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/findmeahammer"
 
 
 [menu]
 
   [[menu.main]]
     name = "Posts"
-    url = "/posts/"
+    url = "/posts"
     weight = 10
 
   [[menu.main]]
-    name = "About"
-    url = "/about/"
+    name = "About me"
+    url = "about"
     weight = 20
