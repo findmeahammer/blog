@@ -14,7 +14,7 @@ There's a lot of mixed content on using Azure Blob storage but they tend to focu
 
 #### Add the package Azure.Storage.Blobs
 
-```
+``` powershell
 dotnet add package Azure.Storage.Blobs
 ```
 
@@ -32,7 +32,7 @@ Whilst you're in the Azure, create a new container.
 
 FYI If your UploadAsync in BlobClient is hanging then it's because your memory stream is at the end, set its position =0.
 
-```
+``` csharp
 var connString = "DefaultEndpointsProtocol=https;AccountName=xxxxx your key 1 connection";
 var containerName ="Name of your container";
             

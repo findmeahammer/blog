@@ -3,7 +3,7 @@ title: "Dynamics Adding Contact to Marketing List Using Api"
 date: 2021-03-14T18:48:46-04:00
 showDate: true
 draft: false
-tags: ["blog","story"]
+tags: ["blog","dynamics 365", "CRM"]
 mermaid: false
 ---
 Adding contact/lead/anything to a marketing list is very simple, however as with most Dynamics documentation isn't easy to find...
@@ -18,7 +18,7 @@ To add a contact to a marketing list all you have to do is submit a POST to the 
 
 with the payload:
 
-```
+``` json
 { 
 "List": { 
       "listid": "[ListID - of the marketing list]", 

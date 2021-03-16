@@ -1,4 +1,4 @@
-#baseURL = "https://example.com"
+baseURL = ""
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "find me a hammer"
@@ -17,11 +17,10 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   name = "Matt"
 
 [blackfriday]
-  hrefTargetBlank = true
+  hrefTargetBlank = false
 
 [taxonomies]
   tag = "tags"
-  category = ""  # Categories are disabled by default.
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -52,7 +51,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   # Check https://github.com/Track3/hermit#social-icons for more info.
   [[params.social]]
     name = "linkedin"
-    url = "www.linkedin.com/in/Matt-Cresswell"
+    url = "https://www.linkedin.com/in/Matt-Cresswell"
 
   [[params.social]]
     name = "github"
@@ -68,5 +67,5 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 
   [[menu.main]]
     name = "About me"
-    url = "about"
+    url = "/about"
     weight = 20
