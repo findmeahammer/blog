@@ -1,9 +1,9 @@
 ---
-title: "About"
+title: "About me"
 date: 2018-02-13T13:42:49-05:00
 ---
 
-Hello, I'm Matt, I've been writing code and managing teams for almost 20 years.
+Hello, I'm Matt. I've been writing code and managing teams for almost 20 years.
 
  
 I've moved on from day to day coding in favour of management and strategy. Trying (and sometimes failing) to improve the lives of technologists' whilst delivering what the business needs - results.

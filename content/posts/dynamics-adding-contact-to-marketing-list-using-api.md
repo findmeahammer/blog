@@ -1,6 +1,6 @@
 ---
 title: "Dynamics Adding Contact to Marketing List Using Api"
-date: 2021-03-14T18:48:46-04:00
+date: 2020-09-01T18:48:46-04:00
 showDate: true
 draft: false
 tags: ["blog","dynamics 365", "CRM"]
