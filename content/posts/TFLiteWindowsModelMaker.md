@@ -2,7 +2,7 @@
 title: "Custom object detection using TF Lite with Model Maker on Windows with Pascal VOC exports from VoTT"
 date: 2021-05-30T18:48:46-04:00
 showDate: true
-draft: true
+draft: false
 tags: ["blog","story"]
 mermaid: false
 ---
