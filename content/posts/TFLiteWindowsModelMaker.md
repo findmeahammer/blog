@@ -13,6 +13,8 @@ Create custom training data using VoTT, export it to Pascal VOC. Then convert it
 
 This is a more thorough guide than available on [https://www.tensorflow.org/lite/tutorials/model_maker_object_detection](https://www.tensorflow.org/lite/tutorials/model_maker_object_detection), using the new tools released at Google IO 2021.
 
+For the jupyter notebook of this see: [https://github.com/findmeahammer/ml/blob/65783a1febf828adb159851d91ef27b450be16df/tflite_modelMaker.ipynb](https://github.com/findmeahammer/ml/blob/65783a1febf828adb159851d91ef27b450be16df/tflite_modelMaker.ipynb)
+
 
 ### Requirements
 The below all need to be installed
