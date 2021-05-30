@@ -1,5 +1,5 @@
 ---
-title: "Custom object detection using TF Lite with Model Maker on Windows with Pascal VOC exports from VoTT"
+title: "Custom object detection on Windows - Pascal VOC to TF Lite Model Maker"
 date: 2021-05-30T18:48:46-04:00
 showDate: true
 draft: false
@@ -7,9 +7,9 @@ tags: ["blog","story"]
 mermaid: false
 ---
 
-# Custom object detection using TF Lite with Model Maker on Windows with Pascal VOC exports from VoTT
+# Custom object detection on Windows -Pascal VOC to TF Lite Model Maker
 
-Create custom training data using VoTT, export it to Pascal VOC. Then convert it into TFRecords to be consumed by TF Lite Model Maker. 
+Create custom training data using VoTT, export it to Pascal VOC. Then convert it into TFRecords to be consumed by TF Lite Model Maker to train your custom model.
 
 This is a more thorough guide than available on [https://www.tensorflow.org/lite/tutorials/model_maker_object_detection](https://www.tensorflow.org/lite/tutorials/model_maker_object_detection), using the new tools released at Google IO 2021.
 
