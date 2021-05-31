@@ -40,7 +40,10 @@ import tensorflow as tf;
 print(tf.reduce_sum(tf.random.normal([1000, 1000])))
 ```
 
-You should see output similar to: `tf.Tensor(1672.2386, shape=(), dtype=float32)` if not then there's something wrong with your install. Check your environment/path variables. 
+You should see output similar to: 
+`tf.Tensor(1672.2386, shape=(), dtype=float32)` 
+
+if not then there's something wrong with your install. Check your environment/path variables. 
 
 
 
@@ -185,7 +188,9 @@ for file in images_list[(train_count + validation_count):]:
 Now it's time to create the tfrecords which will be used by the model maker
 
 First step is to create the label defintion
-`label_map={1: "dog"}`
+``` python
+label_map={1: "dog"}
+```
 The dog/number should be replaced with the annotation you created in VoTT. You can also copy/paste from the pbtxt file in the export from VoTT folder.
 
 The below will generate tfrecords for train, validation and test
@@ -239,11 +244,16 @@ test_data = object_detector.DataLoader(
 ## Training
 Load a prebuilt model to run inferrence on
 
-`spec = model_spec.get('efficientdet_lite0')`
+``` python 
+spec = model_spec.get('efficientdet_lite0')
+```
+
 See the tensorflow guides for more information/othre models
 
 ### Train!
-`model = object_detector.create(train_data, model_spec=spec, batch_size=8, train_whole_model=True, validation_data=validation_data)`
+``` python
+model = object_detector.create(train_data, model_spec=spec, batch_size=8, train_whole_model=True, validation_data=validation_data)
+```
 You will now see something like:
 Epoch 1/50
 33/33 [==============================] - 53s 351ms/step - det_loss: 1.5920 - cls_loss: 1.0355 - box_loss: 0.0111 - reg_l2_loss: 0.0630 - loss: 1.6550 - learning_rate: 0.0090 - gradient_norm: 2.0824 - val_det_loss: 1.3866 - val_cls_loss: 0.6407 - val_box_loss: 0.0149 - val_reg_l2_loss: 0.0630 - val_loss: 1.4496
@@ -252,18 +262,24 @@ Epoch 2/50
 Depending on your GPU this may take some time....
 
 ### Evaluation the mode
-`model.evaluate(test_data)`
+``` python
+model.evaluate(test_data)
+```
 The closer the 'AP' is to 1 the better your model is at identifying the object. Note if you have poor training/test data this may be better than real world. If the AP is 1 then there's a good chance you've got overfit. Get more data.
 
 ### Export the model
 
 To export to the tensorflow saved model format:
 
-`out_dir ='C:/tflite/test1/export'
-model.export(export_dir=out_dir, export_format=[ExportFormat.SAVED_MODEL, ExportFormat.LABEL])`
+``` python
+out_dir ='C:/tflite/test1/export'
+model.export(export_dir=out_dir, export_format=[ExportFormat.SAVED_MODEL, ExportFormat.LABEL])
+```
 
 To export to TFLite to be used on a mobile device:
-`model.export(export_dir=out_dir, tflite_filename='may25model.tflite', export_format=ExportFormat.TFLITE)`
+``` python
+model.export(export_dir=out_dir, tflite_filename='may25model.tflite', export_format=ExportFormat.TFLITE)
+```
 
 ## Testing the model
 
