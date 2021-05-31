@@ -1,6 +1,6 @@
 ---
 title: "Custom object detection on Windows - Pascal VOC to TF Lite Model Maker"
-date: 2021-05-30T18:48:46-04:00
+date: 2021-05-29T18:48:46-04:00
 showDate: true
 draft: false
 tags: ["blog","story"]
